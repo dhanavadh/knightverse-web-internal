@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'IBM Plex Sans Thai';
+	--font-google: 'Google Sans Flex';
+}
+
+.button-nav-blank {
+	@apply flex items-center px-2.5 py-1.5 rounded-lg hover:bg-neutral-100 border-[0.5px] border-solid border-white duration-300;
+}
+
+.menu-nav {
+	@apply flex font-google text-3xl px-6 items-center rounded-lg hover:bg-neutral-100 border-[0.5px] border-solid border-white duration-300 w-full py-4;
+}
