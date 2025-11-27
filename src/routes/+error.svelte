@@ -17,7 +17,7 @@
 	<div class="flex flex-col w-full max-w-7xl mx-auto py-5 px-6 md:px-10 relative z-10">
 		<a
 			href="/"
-			class="text-5xl font-semibold mb-2 bg-neutral-800 hover:underline hover:underline-offset-4 hover:decoration-2"
+			class="text-5xl font-semibold mb-2 hover:underline hover:underline-offset-4 hover:decoration-4"
 		>
 			>Go to Homepage
 		</a>
