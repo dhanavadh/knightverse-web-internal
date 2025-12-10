@@ -86,40 +86,42 @@ export const GET: RequestHandler = async ({ url }) => {
 								width: '100%',
 								position: 'relative'
 							},
-							children: {
-								type: 'div',
-								props: {
-									style: {
-										display: 'flex',
-										flexDirection: 'column',
-										gap: '20px'
-									},
-									children: [
-										{
-											type: 'img',
-											props: {
-												src: logoDataUrl,
-												width: 370,
-												height: 64,
-												style: { objectFit: 'contain' }
-											}
+							children: [
+								{
+									type: 'div',
+									props: {
+										style: {
+											display: 'flex',
+											flexDirection: 'column',
+											gap: '20px'
 										},
-										{
-											type: 'p',
-											props: {
-												style: {
-													fontSize: '48px',
-													fontWeight: 500,
-													color: 'white',
-													lineHeight: 1.3,
-													margin: 0
-												},
-												children: title
+										children: [
+											{
+												type: 'img',
+												props: {
+													src: logoDataUrl,
+													width: 370,
+													height: 64,
+													style: { objectFit: 'contain' }
+												}
+											},
+											{
+												type: 'p',
+												props: {
+													style: {
+														fontSize: '48px',
+														fontWeight: 500,
+														color: 'white',
+														lineHeight: 1.3,
+														margin: 0
+													},
+													children: title
+												}
 											}
-										}
-									]
+										]
+									}
 								}
-							}
+							]
 						}
 					}
 				]

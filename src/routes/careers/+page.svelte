@@ -31,7 +31,7 @@
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/careers" />
 	<meta property="og:site_name" content="KnightVerse Group" />
-	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
+	<meta property="og:image" content="https://knightversegroup.com/api/og?title=Careers" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta property="og:locale" content="th_TH" />
@@ -43,7 +43,7 @@
 		name="twitter:description"
 		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร"
 	/>
-	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
+	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=Careers" />
 
 	<!-- Structured Data -->
 	<script type="application/ld+json">

@@ -1,3 +1,36 @@
+<svelte:head>
+	<title>Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group</title>
+	<meta
+		name="description"
+		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+	/>
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://knightversegroup.com/solutions" />
+
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
+	<meta
+		property="og:description"
+		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+	/>
+	<meta property="og:url" content="https://knightversegroup.com/solutions" />
+	<meta property="og:site_name" content="KnightVerse Group" />
+	<meta property="og:image" content="https://knightversegroup.com/api/og?title=Solutions" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="th_TH" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
+	<meta
+		name="twitter:description"
+		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+	/>
+	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=Solutions" />
+</svelte:head>
+
 <div class="flex flex-col items-center justify-center w-full">
 	<section class="flex flex-col w-full relative text-white font-sans">
 		<div class="absolute inset-0 -z-0 overflow-hidden pointer-events-none bg-neutral-50">

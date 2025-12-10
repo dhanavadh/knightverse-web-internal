@@ -5,18 +5,33 @@
 	<title>ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group</title>
 	<meta
 		name="description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร โดย KnightVerse Group"
+		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
 	/>
-	<meta property="og:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://knightversegroup.com/products" />
+
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group" />
 	<meta
 		property="og:description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร โดย KnightVerse Group"
+		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
 	/>
-	<meta name="twitter:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว" />
+	<meta property="og:url" content="https://knightversegroup.com/products" />
+	<meta property="og:site_name" content="KnightVerse Group" />
+	<meta property="og:image" content="https://knightversegroup.com/api/og?title=%E0%B8%94%E0%B8%B9%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="th_TH" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group" />
 	<meta
 		name="twitter:description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร โดย KnightVerse Group"
+		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
 	/>
+	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=%E0%B8%94%E0%B8%B9%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1" />
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full">
