@@ -19,16 +19,26 @@ function loadLogoDataUrl(): string {
 	return `data:image/svg+xml;base64,${base64}`;
 }
 
+// Load background image and convert to data URL
+function loadBackgroundDataUrl(): string {
+	const bgPath = join(process.cwd(), 'static', 'og_b.png');
+	const bgBuffer = readFileSync(bgPath);
+	const base64 = bgBuffer.toString('base64');
+	return `data:image/png;base64,${base64}`;
+}
+
 export const GET: RequestHandler = async ({ url }) => {
 	// Get title parameter
 	const title = url.searchParams.get('title') || 'KnightVerse Group';
 
-	// Load font and logo
+	// Load font, logo, and background
 	let fontData: ArrayBuffer;
 	let logoDataUrl: string;
+	let bgDataUrl: string;
 	try {
 		fontData = loadFont();
 		logoDataUrl = loadLogoDataUrl();
+		bgDataUrl = loadBackgroundDataUrl();
 	} catch (error) {
 		console.error('Failed to load resources:', error);
 		throw new Error('Failed to load resources');
@@ -44,45 +54,75 @@ export const GET: RequestHandler = async ({ url }) => {
 					width: '100%',
 					display: 'flex',
 					flexDirection: 'column',
-					backgroundColor: '#1c1917',
-					padding: '64px',
-					justifyContent: 'flex-end',
+					position: 'relative',
 					fontFamily: 'IBM Plex Sans Thai'
 				},
-				children: {
-					type: 'div',
-					props: {
-						style: {
-							display: 'flex',
-							flexDirection: 'column',
-							gap: '20px'
-						},
-						children: [
-							{
-								type: 'img',
-								props: {
-									src: logoDataUrl,
-									width: 370,
-									height: 64,
-									style: { objectFit: 'contain' }
-								}
+				children: [
+					// Background image
+					{
+						type: 'img',
+						props: {
+							src: bgDataUrl,
+							style: {
+								position: 'absolute',
+								top: 0,
+								left: 0,
+								width: '100%',
+								height: '100%',
+								objectFit: 'cover'
+							}
+						}
+					},
+					// Content overlay
+					{
+						type: 'div',
+						props: {
+							style: {
+								display: 'flex',
+								flexDirection: 'column',
+								padding: '64px',
+								justifyContent: 'flex-end',
+								height: '100%',
+								width: '100%',
+								position: 'relative'
 							},
-							{
-								type: 'p',
+							children: {
+								type: 'div',
 								props: {
 									style: {
-										fontSize: '48px',
-										fontWeight: 500,
-										color: 'white',
-										lineHeight: 1.3,
-										margin: 0
+										display: 'flex',
+										flexDirection: 'column',
+										gap: '20px'
 									},
-									children: title
+									children: [
+										{
+											type: 'img',
+											props: {
+												src: logoDataUrl,
+												width: 370,
+												height: 64,
+												style: { objectFit: 'contain' }
+											}
+										},
+										{
+											type: 'p',
+											props: {
+												style: {
+													fontSize: '48px',
+													fontWeight: 500,
+													color: 'white',
+													lineHeight: 1.3,
+													margin: 0
+												},
+												children: title
+											}
+										}
+									]
 								}
 							}
-						]
+						}
 					}
-				}
+				]
 			}
 		},
 		{
