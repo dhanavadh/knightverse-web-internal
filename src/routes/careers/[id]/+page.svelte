@@ -15,7 +15,7 @@
 	<meta property="og:description" content={job.description} />
 	<meta property="og:url" content="https://knightversegroup.com/careers/{job.id}" />
 	<meta property="og:site_name" content="KnightVerse Group" />
-	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
+	<meta property="og:image" content="https://knightversegroup.com/api/og?title={encodeURIComponent(`Careers - ${job.title}`)}" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta property="og:locale" content="th_TH" />
@@ -24,7 +24,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{job.title} - {job.type} | KnightVerse Group" />
 	<meta name="twitter:description" content={job.description} />
-	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
+	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title={encodeURIComponent(`Careers - ${job.title}`)}" />
 
 	<!-- Job Posting Structured Data -->
 	{@html `<script type="application/ld+json">
