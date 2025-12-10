@@ -47,6 +47,36 @@ const jobDetails: Record<string, JobDetails> = {
 			'Annual leave and sick leave',
 			'Professional development opportunities'
 		]
+	},
+	'2904': {
+		id: 2904,
+		title: 'Marketing Strategy',
+		location: 'Phaya Thai, Bangkok',
+		company: 'Knight Verse Group',
+		department: 'Marketing',
+		type: 'Contract',
+		date: 'Dec 1, 2025 ~ Jan 31, 2026',
+		description:
+			'We are looking for a creative and data-driven Marketing Strategist to join our team. You will be responsible for developing and executing marketing strategies to drive brand awareness, customer acquisition, and business growth.',
+		responsibilities: [
+			'Develop and implement comprehensive marketing strategies',
+			'Analyze market trends and competitor activities',
+			'Plan and execute digital marketing campaigns across multiple channels',
+			'Collaborate with product and sales teams to align marketing efforts',
+			'Track and report on marketing KPIs and campaign performance',
+			'Manage marketing budget and optimize ROI'
+		],
+		qualifications: [
+			'Strong analytical skills and data-driven decision making',
+			'Experience with digital marketing tools and platforms',
+			'Excellent communication and presentation skills'
+		],
+		benefits: [
+			'Flexible working hours',
+			'Remote work options',
+			'Annual leave and sick leave',
+			'Professional development opportunities'
+		]
 	}
 };
 

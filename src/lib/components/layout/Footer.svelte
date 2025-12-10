@@ -53,10 +53,7 @@
 		}
 	];
 
-	const socialLinks = [
-		{ icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-		{ icon: Mail, href: 'mailto:contact@knightverse.com', label: 'Email' }
-	];
+	const socialLinks = [{ icon: Mail, href: 'mailto:contact@knightverse.com', label: 'Email' }];
 </script>
 
 <footer class="bg-stone-900 text-stone-300">

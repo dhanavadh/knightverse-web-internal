@@ -48,7 +48,7 @@
 		</div>
 
 		<button
-			class="md:hidden flex items-center justify-center p-2 text-neutral-800 rounded-lg hover:bg-neutral-100 transition-colors"
+			class="md:hidden flex items-center justify-center p-2 text-neutral-800 rounded-lg hover:bg-neutral-100/10 transition-colors"
 			onclick={() => (isMenuOpen = !isMenuOpen)}
 			aria-label="Toggle menu"
 		>
@@ -77,8 +77,8 @@
 			</div>
 
 			<div class="flex flex-col gap-2">
-				<a href="/careers" class="menu-nav" onclick={() => (isMenuOpen = false)}>Products</a>
-				<a href="/link" class="menu-nav" onclick={() => (isMenuOpen = false)}>Solutions</a>
+				<a href="/products" class="menu-nav" onclick={() => (isMenuOpen = false)}>Products</a>
+				<a href="/solutions" class="menu-nav" onclick={() => (isMenuOpen = false)}>Solutions</a>
 				<a href="/careers" class="menu-nav" onclick={() => (isMenuOpen = false)}>Careers</a>
 				<a
 					href="https://www.knightvisahelppoint.com/"

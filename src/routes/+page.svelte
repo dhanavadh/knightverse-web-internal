@@ -42,7 +42,10 @@
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/" />
 	<meta property="og:site_name" content="KnightVerse Group" />
-	<meta property="og:image" content="https://knightversegroup.com/api/og?title=KnightVerse%20Group" />
+	<meta
+		property="og:image"
+		content="https://knightversegroup.com/api/og?title=KnightVerse%20Group"
+	/>
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta property="og:locale" content="th_TH" />
@@ -54,7 +57,10 @@
 		name="twitter:description"
 		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
 	/>
-	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=KnightVerse%20Group" />
+	<meta
+		name="twitter:image"
+		content="https://knightversegroup.com/api/og?title=KnightVerse%20Group"
+	/>
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
@@ -73,7 +79,7 @@
 			</h1>
 			<h1 class="shrink-0">for your business</h1>
 		</div>
-		<a href="/" class="button-black">contact us</a>
+		<a href="mailto:contact@knightversegroup.com" class="button-black">contact us</a>
 	</section>
 </div>
 

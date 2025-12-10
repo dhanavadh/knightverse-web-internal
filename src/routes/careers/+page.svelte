@@ -7,8 +7,18 @@
 			company: 'Knight Verse Group',
 			department: 'Product',
 			type: 'Contract',
-			date: 'Nov 3, 2025 ~ Dec 31, 2025',
-			isNew: false
+			date: 'Dec 1, 2025 ~ Jan 31, 2026',
+			isNew: true
+		},
+		{
+			id: 2904,
+			title: 'Marketing Strategy',
+			location: 'Phaya Thai, Bangkok',
+			company: 'Knight Verse Group',
+			department: 'Marketing',
+			type: 'Contract',
+			date: 'Dec 1, 2025 ~ Jan 31, 2026',
+			isNew: true
 		}
 	];
 </script>
