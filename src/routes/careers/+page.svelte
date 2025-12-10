@@ -5,7 +5,7 @@
 			title: 'Software Engineer (Frontend)',
 			location: 'Phaya Thai, Bangkok',
 			company: 'Knight Verse Group',
-			department: 'Corporate',
+			department: 'Product',
 			type: 'Contract',
 			date: 'Nov 3, 2025 ~ Dec 31, 2025',
 			isNew: false
@@ -63,7 +63,7 @@
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full">
-	<section class="flex justify-center w-full bg-stone-800">
+	<section class="flex justify-center w-full bg-stone-900">
 		<div class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-32 pb-8 w-full">
 			<div class="text-white">
 				<p class="mb-2 ml-1">ร่วมงานกับเรา</p>
@@ -73,32 +73,32 @@
 	</section>
 	<section class="flex justify-center w-full">
 		<div class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-8 pb-16 w-full">
-		<div class="w-full">
-			<p class="mb-2 text-xl text-stone-700">ตำแหน่งที่เปิดรับ</p>
-			<p class="mb-2 text-stone-500">{jobs.length} ตำแหน่ง</p>
+			<div class="w-full">
+				<p class="mb-2 text-xl text-stone-700">ตำแหน่งที่เปิดรับ</p>
+				<p class="mb-2 text-stone-500">{jobs.length} ตำแหน่ง</p>
 
-			<ul class="job_list">
-				{#each jobs as job (job.id)}
-					<li>
-						<a href="/careers/{job.id}">
-							<h3 class="title">
-								{job.title}
-								{#if job.isNew}
-									<span class="label new">NEW</span>
-								{/if}
-							</h3>
-							<div class="text_filter">
-								<span>{job.location}</span> |
-								<span>{job.company}</span>
-								<span>{job.department}</span> |
-								<span>{job.type}</span> |
-							</div>
-							<span class="date">{job.date}</span>
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</div>
+				<ul class="job_list">
+					{#each jobs as job (job.id)}
+						<li>
+							<a href="/careers/{job.id}">
+								<h3 class="title">
+									{job.title}
+									{#if job.isNew}
+										<span class="label new">NEW</span>
+									{/if}
+								</h3>
+								<div class="text_filter">
+									<span>{job.location}</span> |
+									<span>{job.company}</span>
+									<span>{job.department}</span> |
+									<span>{job.type}</span> |
+								</div>
+								<span class="date">{job.date}</span>
+							</a>
+						</li>
+					{/each}
+				</ul>
+			</div>
 		</div>
 	</section>
 </div>

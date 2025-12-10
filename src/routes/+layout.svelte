@@ -64,6 +64,10 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
-<Navbar />
-{@render children()}
-<Footer />
+<div class="flex min-h-screen flex-col">
+	<Navbar />
+	<main class="flex-1">
+		{@render children()}
+	</main>
+	<Footer />
+</div>

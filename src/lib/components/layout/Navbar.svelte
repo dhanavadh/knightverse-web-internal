@@ -20,7 +20,7 @@
 	class={'w-full flex flex-col  top-0 left-0 right-0 z-50 transition-colors duration-300 ' +
 		(isStatic ? 'bg-transparent fixed' : 'bg-white fixed')}
 >
-	<div class="max-w-7xl mx-auto w-full py-5 px-6 md:px-10 flex items-center justify-between">
+	<div class="max-w-7xl mx-auto w-full py-5 px-6 flex items-center justify-between">
 		<a href="/" class="mr-auto">
 			{#if isStatic}
 				<img src={logoWhite} alt="KnightVerse Logo" class="h-6 w-auto block" />

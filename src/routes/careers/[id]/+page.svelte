@@ -22,9 +22,9 @@
 			title: 'Software Engineer (Frontend)',
 			location: 'Phaya Thai, Bangkok',
 			company: 'Knight Verse Group',
-			department: 'Corporate',
+			department: 'Product',
 			type: 'Contract',
-			date: 'Nov 3, 2025 ~ Dec 31, 2025',
+			date: 'Dec 1, 2025 ~ Jan 31, 2026',
 			description:
 				'We are looking for a passionate Frontend Software Engineer to join our team. You will be responsible for building and maintaining user-facing features for our web applications using modern technologies like React, Vue, or Svelte.',
 			responsibilities: [
@@ -57,14 +57,14 @@
 
 <svelte:head>
 	<title>{job.title} - Careers | KnightVerse Group</title>
-	<meta name="description" content="{job.description}" />
+	<meta name="description" content={job.description} />
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://knightversegroup.com/careers/{job.id}" />
 
 	<!-- OpenGraph -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{job.title} - {job.type} | KnightVerse Group" />
-	<meta property="og:description" content="{job.description}" />
+	<meta property="og:description" content={job.description} />
 	<meta property="og:url" content="https://knightversegroup.com/careers/{job.id}" />
 	<meta property="og:site_name" content="KnightVerse Group" />
 	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
@@ -75,7 +75,7 @@
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{job.title} - {job.type} | KnightVerse Group" />
-	<meta name="twitter:description" content="{job.description}" />
+	<meta name="twitter:description" content={job.description} />
 	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
 
 	<!-- Job Posting Structured Data -->
