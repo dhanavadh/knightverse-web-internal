@@ -37,21 +37,16 @@
 			],
 			qualifications: [
 				"Bachelor's degree in Computer Science or related field",
-				'3+ years of experience in frontend development',
 				'Proficiency in JavaScript/TypeScript, HTML, and CSS',
-				'Experience with modern frontend frameworks (React, Vue, Svelte)',
+				'Experience with modern frontend frameworks (React or Svelte)',
 				'Familiarity with RESTful APIs and version control systems (Git)',
-				'Strong problem-solving skills and attention to detail',
-				'Good communication skills in English'
+				'Strong problem-solving skills and attention to detail'
 			],
 			benefits: [
-				'Competitive salary and performance bonuses',
 				'Flexible working hours',
 				'Remote work options',
-				'Health insurance',
 				'Annual leave and sick leave',
-				'Professional development opportunities',
-				'Modern office in central Bangkok'
+				'Professional development opportunities'
 			]
 		}
 	};
@@ -86,45 +81,48 @@
 
 	<section class="flex justify-center w-full">
 		<div class="flex flex-col max-w-7xl px-6 gap-8 items-start pt-8 pb-16 w-full">
-		<div class="w-full max-w-3xl">
-			<div class="mb-8">
-				<h2 class="text-xl font-medium text-stone-700 mb-4">Job Description</h2>
-				<p class="text-stone-600 leading-relaxed">{job.description}</p>
-			</div>
+			<div class="w-full max-w-3xl">
+				<div class="mb-8">
+					<h2 class="text-xl font-medium text-stone-700 mb-4">Job Description</h2>
+					<p class="text-stone-600 leading-relaxed">{job.description}</p>
+				</div>
 
-			<div class="mb-8">
-				<h2 class="text-xl font-medium text-stone-700 mb-4">Responsibilities</h2>
-				<ul class="list-disc list-inside text-stone-600 space-y-2">
-					{#each job.responsibilities as item}
-						<li>{item}</li>
-					{/each}
-				</ul>
-			</div>
+				<div class="mb-8">
+					<h2 class="text-xl font-medium text-stone-700 mb-4">Responsibilities</h2>
+					<ul class="list-disc list-inside text-stone-600 space-y-2">
+						{#each job.responsibilities as item}
+							<li>{item}</li>
+						{/each}
+					</ul>
+				</div>
 
-			<div class="mb-8">
-				<h2 class="text-xl font-medium text-stone-700 mb-4">Qualifications</h2>
-				<ul class="list-disc list-inside text-stone-600 space-y-2">
-					{#each job.qualifications as item}
-						<li>{item}</li>
-					{/each}
-				</ul>
-			</div>
+				<div class="mb-8">
+					<h2 class="text-xl font-medium text-stone-700 mb-4">Qualifications</h2>
+					<ul class="list-disc list-inside text-stone-600 space-y-2">
+						{#each job.qualifications as item}
+							<li>{item}</li>
+						{/each}
+					</ul>
+				</div>
 
-			<div class="mb-8">
-				<h2 class="text-xl font-medium text-stone-700 mb-4">Benefits</h2>
-				<ul class="list-disc list-inside text-stone-600 space-y-2">
-					{#each job.benefits as item}
-						<li>{item}</li>
-					{/each}
-				</ul>
-			</div>
+				<div class="mb-8">
+					<h2 class="text-xl font-medium text-stone-700 mb-4">Benefits</h2>
+					<ul class="list-disc list-inside text-stone-600 space-y-2">
+						{#each job.benefits as item}
+							<li>{item}</li>
+						{/each}
+					</ul>
+				</div>
 
-			<div class="mt-12">
-				<a href="mailto:careers@knightverse.com?subject=Application for {job.title}" class="button-black">
-					Apply for this position
-				</a>
+				<div class="mt-12">
+					<a
+						href="mailto:contact@knightversegroup.com?subject=Application for {job.title}"
+						class="button-black"
+					>
+						Apply for this position
+					</a>
+				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 </div>
