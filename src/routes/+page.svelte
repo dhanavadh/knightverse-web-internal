@@ -31,16 +31,31 @@
 		name="description"
 		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
 	/>
+	<link rel="canonical" href="https://knightversegroup.com/" />
+
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
 	<meta property="og:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
 	<meta
 		property="og:description"
 		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
 	/>
+	<meta property="og:url" content="https://knightversegroup.com/" />
+	<meta property="og:site_name" content="KnightVerse Group" />
+	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Knight Verse Group Cover Image" />
+	<meta property="og:locale" content="th_TH" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
 	<meta
 		name="twitter:description"
 		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
 	/>
+	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
