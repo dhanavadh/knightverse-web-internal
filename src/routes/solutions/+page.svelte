@@ -1,18 +1,22 @@
 <svelte:head>
-	<title>Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group</title>
+	<title>Solutions – โซลูชั่นซอฟต์แวร์พร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group</title>
 	<meta
 		name="description"
-		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด พร้อมนำโซลูชั่นซอฟต์แวร์ระบบมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ"
+	/>
+	<meta
+		name="keywords"
+		content="โซลูชั่นซอฟต์แวร์, software solutions, ระบบจัดการข้อมูล, ซอฟต์แวร์ธุรกิจ, business software, digital solutions, KnightVerse Group"
 	/>
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://knightversegroup.com/solutions" />
 
 	<!-- OpenGraph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
+	<meta property="og:title" content="Solutions – โซลูชั่นซอฟต์แวร์พร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
 	<meta
 		property="og:description"
-		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด พร้อมนำโซลูชั่นซอฟต์แวร์ระบบมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ซอฟต์แวร์จัดการฐานข้อมูล"
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/solutions" />
 	<meta property="og:site_name" content="KnightVerse Group" />
@@ -23,10 +27,10 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Solutions – โซลูชั่นพร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
+	<meta name="twitter:title" content="Solutions – โซลูชั่นซอฟต์แวร์พร้อมแก้ปัญหาให้ธุรกิจของคุณ | KnightVerse Group" />
 	<meta
 		name="twitter:description"
-		content="KnightVerse Group พร้อมนำโซลูชั่นดิจิทัลมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ระบบจัดการข้อมูล และอื่นๆ"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด พร้อมนำโซลูชั่นซอฟต์แวร์ระบบมาแก้ปัญหาให้ธุรกิจของคุณ ระบบแปลเอกสาร ซอฟต์แวร์จัดการฐานข้อมูล"
 	/>
 	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=Solutions" />
 </svelte:head>

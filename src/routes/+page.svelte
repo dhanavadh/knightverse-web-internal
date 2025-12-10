@@ -26,19 +26,23 @@
 </script>
 
 <svelte:head>
-	<title>KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ</title>
+	<title>KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ</title>
 	<meta
 		name="description"
-		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด ผู้เชี่ยวชาญด้านการพัฒนาซอฟต์แวร์ระบบ ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ พร้อมให้บริการ Digital Solutions ครบวงจร"
+	/>
+	<meta
+		name="keywords"
+		content="พัฒนาซอฟต์แวร์, software development, ซอฟต์แวร์ระบบ, ซอฟต์แวร์จัดการฐานข้อมูล, โปรแกรมสำเร็จรูป, digital solutions, บริษัทพัฒนาซอฟต์แวร์, KnightVerse Group, ไนท์เวิร์ส"
 	/>
 	<link rel="canonical" href="https://knightversegroup.com/" />
 
 	<!-- OpenGraph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
+	<meta property="og:title" content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ" />
 	<meta
 		property="og:description"
-		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด ผู้เชี่ยวชาญด้านการพัฒนาซอฟต์แวร์ระบบ ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ"
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/" />
 	<meta property="og:site_name" content="KnightVerse Group" />
@@ -52,10 +56,10 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
+	<meta name="twitter:title" content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ" />
 	<meta
 		name="twitter:description"
-		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด ผู้เชี่ยวชาญด้านการพัฒนาซอฟต์แวร์ระบบ ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ"
 	/>
 	<meta
 		name="twitter:image"

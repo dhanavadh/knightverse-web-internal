@@ -5,7 +5,11 @@
 	<title>ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group</title>
 	<meta
 		name="description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
+		content="ดูฟอร์ม ซอฟต์แวร์สำเร็จรูประบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว พัฒนาโดย บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด"
+	/>
+	<meta
+		name="keywords"
+		content="ดูฟอร์ม, dooform, แปลเอกสาร, ซอฟต์แวร์แปลภาษา, แปลงไฟล์ PDF, โปรแกรมแปลเอกสาร, translation software, KnightVerse Group"
 	/>
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://knightversegroup.com/products" />
@@ -15,7 +19,7 @@
 	<meta property="og:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group" />
 	<meta
 		property="og:description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
+		content="ดูฟอร์ม ซอฟต์แวร์สำเร็จรูประบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว"
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/products" />
 	<meta property="og:site_name" content="KnightVerse Group" />
@@ -29,7 +33,7 @@
 	<meta name="twitter:title" content="ดูฟอร์ม – ระบบแปลเอกสารครบในที่เดียว | KnightVerse Group" />
 	<meta
 		name="twitter:description"
-		content="ดูฟอร์ม ระบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว โดย KnightVerse Group"
+		content="ดูฟอร์ม ซอฟต์แวร์สำเร็จรูประบบแปลเอกสารครบในที่เดียว ลดภาระงานแปลเอกสาร แปลงไฟล์ PDF, Word, Excel ได้อย่างรวดเร็ว"
 	/>
 	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=%E0%B8%94%E0%B8%B9%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1" />
 </svelte:head>

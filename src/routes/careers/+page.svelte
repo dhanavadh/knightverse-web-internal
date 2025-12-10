@@ -24,20 +24,24 @@
 </script>
 
 <svelte:head>
-	<title>Careers | KnightVerse Group</title>
+	<title>Careers – ร่วมงานกับเรา | บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด</title>
 	<meta
 		name="description"
-		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร ทั้ง Software Engineer, Designer และอื่นๆ"
+		content="ร่วมงานกับ บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด บริษัทพัฒนาซอฟต์แวร์ชั้นนำ ค้นหาตำแหน่งงานที่เปิดรับสมัคร Software Engineer, Marketing และอื่นๆ ที่กรุงเทพมหานคร"
+	/>
+	<meta
+		name="keywords"
+		content="สมัครงาน, careers, งาน software engineer, งาน developer, งานบริษัทซอฟต์แวร์, KnightVerse Group, ไนท์เวิร์ส, งานกรุงเทพ"
 	/>
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://knightversegroup.com/careers" />
 
 	<!-- OpenGraph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Careers | KnightVerse Group" />
+	<meta property="og:title" content="Careers – ร่วมงานกับเรา | บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด" />
 	<meta
 		property="og:description"
-		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร ทั้ง Software Engineer, Designer และอื่นๆ"
+		content="ร่วมงานกับ บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด บริษัทพัฒนาซอฟต์แวร์ชั้นนำ ค้นหาตำแหน่งงานที่เปิดรับสมัคร"
 	/>
 	<meta property="og:url" content="https://knightversegroup.com/careers" />
 	<meta property="og:site_name" content="KnightVerse Group" />
@@ -48,10 +52,10 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Careers | KnightVerse Group" />
+	<meta name="twitter:title" content="Careers – ร่วมงานกับเรา | บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด" />
 	<meta
 		name="twitter:description"
-		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร"
+		content="ร่วมงานกับ บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด บริษัทพัฒนาซอฟต์แวร์ชั้นนำ ค้นหาตำแหน่งงานที่เปิดรับสมัคร"
 	/>
 	<meta name="twitter:image" content="https://knightversegroup.com/api/og?title=Careers" />
 
