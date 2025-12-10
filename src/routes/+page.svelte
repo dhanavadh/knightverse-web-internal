@@ -39,7 +39,10 @@
 
 	<!-- OpenGraph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ" />
+	<meta
+		property="og:title"
+		content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ"
+	/>
 	<meta
 		property="og:description"
 		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด ผู้เชี่ยวชาญด้านการพัฒนาซอฟต์แวร์ระบบ ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ"
@@ -56,7 +59,10 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ" />
+	<meta
+		name="twitter:title"
+		content="KnightVerse Group – บริษัทพัฒนาซอฟต์แวร์ โซลูชั่นดิจิทัลสำหรับธุรกิจ"
+	/>
 	<meta
 		name="twitter:description"
 		content="บริษัท ไนท์ เวิร์ส กรุ๊ป จำกัด ผู้เชี่ยวชาญด้านการพัฒนาซอฟต์แวร์ระบบ ซอฟต์แวร์จัดการฐานข้อมูล โปรแกรมประยุกต์เพิ่มประสิทธิภาพธุรกิจ"
@@ -67,23 +73,37 @@
 	/>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center w-full min-h-screen">
-	<section class="flex flex-col max-w-7xl px-6 gap-4 items-start w-full h-full">
-		<div class="text-start text-5xl text-stone-700/90 font-light">
-			<h1 class="lotto-container">
-				{#each keywords as keyword, i}
-					<span
-						class="lotto-item"
-						class:active={i === currentIndex && !isSpinning}
-						class:spinning={i === currentIndex && isSpinning}
-					>
-						{keyword}
-					</span>
-				{/each}
-			</h1>
-			<h1 class="shrink-0">for your business</h1>
+<div class="flex flex-col items-center justify-center w-full py-32">
+	<section
+		class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center w-full max-w-7xl px-6"
+	>
+		<!-- Left: Text Content -->
+		<div class="flex flex-col gap-4 items-start lg:col-span-2">
+			<div class="text-start text-4xl md:text-5xl text-stone-700/90 font-light">
+				<h1 class="lotto-container">
+					{#each keywords as keyword, i}
+						<span
+							class="lotto-item"
+							class:active={i === currentIndex && !isSpinning}
+							class:spinning={i === currentIndex && isSpinning}
+						>
+							{keyword}
+						</span>
+					{/each}
+				</h1>
+				<h1 class="shrink-0">for your business</h1>
+			</div>
+			<a href="mailto:contact@knightversegroup.com" class="button-black">contact us</a>
 		</div>
-		<a href="mailto:contact@knightversegroup.com" class="button-black">contact us</a>
+
+		<!-- Right: Screenshot Preview -->
+		<div class="lg:col-span-3 overflow-hidden rounded-xl aspect-[4/3] md:aspect-video">
+			<img
+				src="/preview/scs2.webp"
+				alt="ดูฟอร์ม - ระบบแปลเอกสารอัตโนมัติ"
+				class="w-full h-full object-cover shadow-2xl border border-stone-200 rounded-xl"
+			/>
+		</div>
 	</section>
 </div>
 

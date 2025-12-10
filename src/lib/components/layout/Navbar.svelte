@@ -18,7 +18,7 @@
 
 <nav
 	class={'w-full flex flex-col  top-0 left-0 right-0 z-50 transition-colors duration-300 ' +
-		(isStatic ? 'bg-transparent fixed' : 'bg-white fixed')}
+		(isStatic ? 'bg-transparent fixed' : 'bg-white sticky')}
 >
 	<div class="max-w-7xl mx-auto w-full py-5 px-6 flex items-center justify-between">
 		<a href="/" class="mr-auto">
