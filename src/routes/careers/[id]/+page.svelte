@@ -56,8 +56,55 @@
 </script>
 
 <svelte:head>
-	<title>{job.title} - Careers - KnightVerse Group</title>
-	<meta name="description" content="{job.title} at {job.company}" />
+	<title>{job.title} - Careers | KnightVerse Group</title>
+	<meta name="description" content="{job.description}" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://knightversegroup.com/careers/{job.id}" />
+
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{job.title} - {job.type} | KnightVerse Group" />
+	<meta property="og:description" content="{job.description}" />
+	<meta property="og:url" content="https://knightversegroup.com/careers/{job.id}" />
+	<meta property="og:site_name" content="KnightVerse Group" />
+	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="th_TH" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{job.title} - {job.type} | KnightVerse Group" />
+	<meta name="twitter:description" content="{job.description}" />
+	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
+
+	<!-- Job Posting Structured Data -->
+	{@html `<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "JobPosting",
+			"title": "${job.title}",
+			"description": "${job.description}",
+			"datePosted": "2025-11-03",
+			"validThrough": "2025-12-31",
+			"employmentType": "${job.type === 'Full-time' ? 'FULL_TIME' : job.type === 'Contract' ? 'CONTRACTOR' : job.type === 'Intern' ? 'INTERN' : 'OTHER'}",
+			"hiringOrganization": {
+				"@type": "Organization",
+				"name": "${job.company}",
+				"sameAs": "https://knightversegroup.com",
+				"logo": "https://knightversegroup.com/og.webp"
+			},
+			"jobLocation": {
+				"@type": "Place",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "${job.location}",
+					"addressCountry": "TH"
+				}
+			},
+			"industry": "${job.department}"
+		}
+	</script>`}
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full">

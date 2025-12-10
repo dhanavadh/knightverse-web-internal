@@ -14,18 +14,65 @@
 </script>
 
 <svelte:head>
-	<title>Careers - KnightVerse Group</title>
-	<meta name="description" content="ร่วมงานกับ KnightVerse Group - ตำแหน่งงานที่เปิดรับสมัคร" />
+	<title>Careers | KnightVerse Group</title>
+	<meta
+		name="description"
+		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร ทั้ง Software Engineer, Designer และอื่นๆ"
+	/>
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://knightversegroup.com/careers" />
+
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Careers | KnightVerse Group" />
+	<meta
+		property="og:description"
+		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร ทั้ง Software Engineer, Designer และอื่นๆ"
+	/>
+	<meta property="og:url" content="https://knightversegroup.com/careers" />
+	<meta property="og:site_name" content="KnightVerse Group" />
+	<meta property="og:image" content="https://knightversegroup.com/og.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="th_TH" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Careers | KnightVerse Group" />
+	<meta
+		name="twitter:description"
+		content="ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร"
+	/>
+	<meta name="twitter:image" content="https://knightversegroup.com/og.webp" />
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Careers - KnightVerse Group",
+			"description": "ร่วมงานกับ KnightVerse Group - ค้นหาตำแหน่งงานที่เปิดรับสมัคร",
+			"url": "https://knightversegroup.com/careers",
+			"isPartOf": {
+				"@type": "WebSite",
+				"name": "KnightVerse Group",
+				"url": "https://knightversegroup.com"
+			}
+		}
+	</script>
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center w-full">
-	<section class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-32 pb-8 w-full bg-stone-800">
-		<div class="text-white">
-			<p class="mb-2 ml-1">ร่วมงานกับเรา</p>
-			<h1 class="text-5xl">Careers</h1>
+	<section class="flex justify-center w-full bg-stone-800">
+		<div class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-32 pb-8 w-full">
+			<div class="text-white">
+				<p class="mb-2 ml-1">ร่วมงานกับเรา</p>
+				<h1 class="text-5xl">Careers</h1>
+			</div>
 		</div>
 	</section>
-	<section class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-8 pb-16 w-full">
+	<section class="flex justify-center w-full">
+		<div class="flex flex-col max-w-7xl px-6 gap-4 items-start pt-8 pb-16 w-full">
 		<div class="w-full">
 			<p class="mb-2 text-xl text-stone-700">ตำแหน่งที่เปิดรับ</p>
 			<p class="mb-2 text-stone-500">{jobs.length} ตำแหน่ง</p>
@@ -51,6 +98,7 @@
 					</li>
 				{/each}
 			</ul>
+		</div>
 		</div>
 	</section>
 </div>
