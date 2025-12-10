@@ -4,33 +4,40 @@
 	import logoBlack from '$lib/assets/logo.svg';
 	import { ArrowUpRight, Menu, X } from '@lucide/svelte';
 	import { fly } from 'svelte/transition';
+	import { page } from '$app/state';
 
 	let isMenuOpen = $state(false);
 	let y = $state(0);
-	let isStatic = $derived(y < 10);
+
+	const transparentPages = ['/products', '/solutions', '/careers'];
+	let isTransparentPage = $derived(transparentPages.includes(page.url.pathname));
+	let isStatic = $derived(isTransparentPage && y < 10);
 </script>
 
 <svelte:window bind:scrollY={y} />
 
 <nav
-	class={'w-full flex flex-col fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ' +
-		(isStatic ? 'bg-transparent' : 'bg-white shadow-sm')}
+	class={'w-full flex flex-col  top-0 left-0 right-0 z-50 transition-colors duration-300 ' +
+		(isStatic ? 'bg-transparent fixed' : 'bg-white fixed')}
 >
 	<div class="max-w-7xl mx-auto w-full py-5 px-6 md:px-10 flex items-center justify-between">
 		<a href="/" class="mr-auto">
 			{#if isStatic}
-				<img src={logoWhite} alt="KnightVerse Logo" class="h-8 w-auto block" />
+				<img src={logoWhite} alt="KnightVerse Logo" class="h-6 w-auto block" />
 			{:else}
-				<img src={logoBlack} alt="KnightVerse Logo" class="h-8 w-auto block" />
+				<img src={logoBlack} alt="KnightVerse Logo" class="h-6 w-auto block" />
 			{/if}
 		</a>
 
-		<div class="hidden md:flex items-center gap-2 font-medium">
+		<div class="hidden md:flex items-center gap-2 font-medium text-stone-700/60">
 			<a href="/products" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
 				>Products</a
 			>
 			<a href="/solutions" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
 				>Solutions</a
+			>
+			<a href="/careers" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
+				>Careers</a
 			>
 			<a
 				href="https://www.knightvisahelppoint.com/"
@@ -38,7 +45,6 @@
 				class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
 				>Knight Group <ArrowUpRight class="h-4 w-4" /></a
 			>
-			<a href="/" class="button-white">Contacts</a>
 		</div>
 
 		<button
@@ -60,7 +66,7 @@
 			class="fixed inset-0 z-[60] bg-white flex flex-col p-6 h-screen w-full md:hidden"
 		>
 			<div class="flex items-center justify-between mb-8">
-				<img src={logoBlack} alt="KnightVerse Logo" class="h-8 w-auto block" />
+				<img src={logoBlack} alt="KnightVerse Logo" class="pl-6 h-6 w-auto block" />
 				<button
 					class="flex items-center justify-center p-2 text-neutral-800 rounded-lg hover:bg-neutral-100 transition-colors"
 					onclick={() => (isMenuOpen = false)}

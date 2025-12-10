@@ -1,33 +1,90 @@
 <script lang="ts">
-	import GradientBackground from '$lib/components/GradientBackground.svelte';
+	import { onMount } from 'svelte';
+
+	const keywords = [
+		'Digital Solution',
+		'Data Analysis',
+		'Infrastructure',
+		'Cloud Services',
+		'AI Integration'
+	];
+
+	let currentIndex = 0;
+	let isSpinning = false;
+
+	onMount(() => {
+		const interval = setInterval(() => {
+			isSpinning = true;
+			setTimeout(() => {
+				currentIndex = (currentIndex + 1) % keywords.length;
+				isSpinning = false;
+			}, 400);
+		}, 3000);
+
+		return () => clearInterval(interval);
+	});
 </script>
 
 <svelte:head>
 	<title>KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ</title>
-	<meta name="description" content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด" />
+	<meta
+		name="description"
+		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+	/>
 	<meta property="og:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
-	<meta property="og:description" content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด" />
+	<meta
+		property="og:description"
+		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+	/>
 	<meta name="twitter:title" content="KnightVerse Group – โซลูชั่นดิจิทัลสำหรับธุรกิจของคุณ" />
-	<meta name="twitter:description" content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด" />
+	<meta
+		name="twitter:description"
+		content="KnightVerse Group พร้อมนำ Digital Solutions มอบให้คุณ โซลูชั่นที่ตอบโจทย์ธุรกิจทุกขนาด"
+	/>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center w-full">
-	<section class="flex flex-col w-full relative text-white font-sans">
-		<GradientBackground />
-		<div class="absolute inset-0 -z-0 overflow-hidden pointer-events-none bg-neutral-50">
-			<img src="/bg.webp" alt="KnightVerse Group background" class="block object-cover w-full h-full brightness-70" />
+<div class="flex flex-col items-center justify-center w-full min-h-screen">
+	<section class="flex flex-col max-w-7xl px-6 gap-4 items-start w-full h-full">
+		<div class="text-start text-5xl text-stone-700/90 font-light">
+			<h1 class="lotto-container">
+				{#each keywords as keyword, i}
+					<span
+						class="lotto-item"
+						class:active={i === currentIndex && !isSpinning}
+						class:spinning={i === currentIndex && isSpinning}
+					>
+						{keyword}
+					</span>
+				{/each}
+			</h1>
+			<h1 class="shrink-0">for your business</h1>
 		</div>
-		<div
-			class="flex flex-col w-full max-w-7xl mx-auto h-[50vh] justify-end pb-8 py-5 px-6 md:px-10 relative z-10"
-		>
-			<h1 class="text-5xl font-semibold mb-4 w-full">โซลูชั่นที่ตอบโจทย์ธุรกิจของคุณ</h1>
-			<p class="text-xl">Knight Verse Group พร้อมนำ Digital Solutions มอบให้คุณ</p>
-		</div>
-	</section>
-	<section class="flex h-screen">
-		<h2>Welcome to SvelteKit</h2>
-		<p>
-			Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation
-		</p>
+		<a href="/" class="button-black">contact us</a>
 	</section>
 </div>
+
+<style>
+	.lotto-container {
+		display: grid;
+		position: relative;
+	}
+
+	.lotto-item {
+		grid-area: 1 / 1;
+		opacity: 0;
+		transform: translateY(20px);
+		transition:
+			transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+			opacity 0.3s ease;
+	}
+
+	.lotto-item.active {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.lotto-item.spinning {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+</style>
