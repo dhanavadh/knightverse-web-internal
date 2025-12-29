@@ -14,41 +14,36 @@
 
 	const footerGroups: FooterGroup[] = [
 		{
-			title: 'Products',
+			title: 'Labs',
 			links: [
-				{ label: 'Business Solutions', href: '/products' },
-				{ label: 'Digital Experience', href: '/products' },
-				{ label: 'Website Development', href: '/products' },
-				{ label: 'CRM Integration', href: '/products' },
-				{ label: 'SEO Management', href: '/products' }
+				{ label: 'LINE CRM', href: '/products' },
+				{ label: 'Dooform', href: '/products' },
+				{ label: 'Social Monitoring', href: '/products' },
+				{ label: 'Placeholder Model', href: '/products' }
 			]
 		},
 		{
-			title: 'Solutions',
+			title: 'Plan Resources',
 			links: [
-				{ label: 'E-commerce', href: '/solutions' },
-				{ label: 'Analytics', href: '/solutions' },
-				{ label: 'Automation', href: '/solutions' },
-				{ label: 'Marketing', href: '/solutions' }
+				{ label: 'ปฎิทิน', href: '/solutions' },
+				{ label: 'บันทึกประชุม', href: '/solutions' },
+				{ label: 'ความคืบหน้า', href: '/solutions' }
 			]
 		},
 		{
-			title: 'Learn',
+			title: 'Business',
 			links: [
-				{ label: 'Blog', href: '/blog' },
-				{ label: 'Case Studies', href: '/cases' },
-				{ label: 'Documentation', href: '/docs' },
-				{ label: 'Resources', href: '/resources' }
+				{ label: 'ROI Calculator', href: '/blog' },
+				{ label: 'Business Plan', href: '/cases' }
 			]
 		},
 		{
 			title: 'Company',
 			links: [
-				{ label: 'About Us', href: '/about' },
-				{ label: 'Careers', href: '/careers' },
-				{ label: 'Contact', href: '/contact' },
-				{ label: 'Privacy Policy', href: '/privacy' },
-				{ label: 'Terms of Service', href: '/terms' }
+				{ label: 'ข้อมูลบริษัท', href: '/about' },
+				{ label: 'รายการค่าใช้จ่าย', href: '/careers' },
+				{ label: 'ติดต่อแจ้งปัญหา', href: '/contact' },
+				{ label: 'ขอสิทธิ์เข้าใช้งาน M365', href: '/contact' }
 			]
 		}
 	];

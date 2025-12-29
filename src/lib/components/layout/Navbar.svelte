@@ -30,20 +30,20 @@
 		</a>
 
 		<div class="hidden md:flex items-center gap-2 font-medium text-stone-700/60">
-			<a href="/products" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
-				>Products</a
+			<a href="/labs" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
+				>Labs</a
 			>
-			<a href="/solutions" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
-				>Solutions</a
+			<a href="/calendar" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
+				>ปฎิทิน</a
 			>
-			<a href="/careers" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
-				>Careers</a
+			<a href="/repo" class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
+				>คลังข้อมูล</a
 			>
 			<a
-				href="https://www.knightvisahelppoint.com/"
+				href="https://knightversegroup.com/"
 				target="_blank"
 				class={isStatic ? 'button-nav-blank-state' : 'button-nav-blank-normal'}
-				>Knight Group <ArrowUpRight class="h-4 w-4" /></a
+				>เว็บไซต์หลัก <ArrowUpRight class="h-4 w-4" /></a
 			>
 		</div>
 
